@@ -1,14 +1,15 @@
-import React, { Component } from 'react'
+import React ,{ Component} from 'react';
+import {  StyleSheet } from 'react-native';
 import BottomTabNavigator from './navigation/TabNavigator'
-import { NavigationContainer } from '@react-navigation/native'
+import { NavigationContainer } from '@react-navigation/native';
 
-class App extends Component {
-  render () {
+class App extends Component{
+render(){ 
     return (
       <NavigationContainer>
-        <BottomTabNavigator />
-      </NavigationContainer>
-    )
+      <BottomTabNavigator />
+    </NavigationContainer>
+    );
   }
 }
 
@@ -17,7 +18,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'space-between'
-  }
+    justifyContent: 'space-between',
+  },
 })
-export default App
+export default App;
+  
